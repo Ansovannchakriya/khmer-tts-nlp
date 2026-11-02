@@ -1,0 +1,12 @@
+# large data and model files live on Google Drive (NLPfinalproject/)
+*.wav
+*.pth
+*.zip
+processed/
+dataset/
+audio/
+runs/
+mos/clips/
+_KEY_do_not_share.csv
+.ipynb_checkpoints/
+__pycache__/

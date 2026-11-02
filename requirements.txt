@@ -1,0 +1,23 @@
+# Khmer TTS (ITM 454, Group 5)
+# Steps 1-2 (local conda env or Colab)
+pandas
+numpy
+matplotlib
+scikit-learn
+tqdm
+soundfile
+librosa
+pyloudnorm
+
+# Step 3 training and Step 4 speech generation (Colab, GPU)
+torch
+torchaudio
+coqui-tts
+transformers        # MMS-TTS Khmer baseline
+
+# Step 4 evaluation
+rapidfuzz           # CER
+scipy               # MCD (DCT), statistics for MOS
+tabulate            # markdown summary table
+# qwen-asr          # Khmer ASR for CER: installed by the notebook in its own environment (B0),
+#                   # because it needs a different transformers version than coqui-tts

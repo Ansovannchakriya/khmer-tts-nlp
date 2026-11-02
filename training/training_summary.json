@@ -1,0 +1,14 @@
+{
+  "epochs_trained": 20,
+  "max_epochs": 50,
+  "best_epoch": 13,
+  "best_validation_loss": 16.22254927262016,
+  "stopped_early": true,
+  "pretrained_start": true,
+  "batch_size": 8,
+  "learning_rate": 0.0002,
+  "sample_rate": 22050,
+  "train_clips": 9180,
+  "val_clips": 372,
+  "test_clips": 370
+}
