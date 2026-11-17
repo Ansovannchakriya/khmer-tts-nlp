@@ -94,6 +94,37 @@ The dataset, audio files and trained model are too large for GitHub. They are ke
 
 ## How to run
 
+### Option A: VS Code (on your computer)
+
+1. **Clone the repo** (VS Code terminal: **Terminal → New Terminal**):
+   ```bash
+   git clone https://github.com/Ansovannchakriya/khmer-tts-nlp.git
+   cd khmer-tts-nlp
+   code .
+   ```
+2. **Create a virtual environment** (Python 3.10 or 3.11):
+   ```bash
+   python -m venv .venv
+   # Windows
+   .venv\Scripts\activate
+   # macOS / Linux
+   source .venv/bin/activate
+   ```
+3. **Install the packages:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Install the VS Code extensions** **Python** and **Jupyter** (Microsoft).
+5. **Open a notebook** in `notebooks/`, click **Select Kernel** (top right) and pick `.venv`.
+6. **Run the notebooks in order:** `1_text_preprocessing` → `2_audio_preprocessing` → `3_vits_training` → `4_evaluation`.
+
+> Steps 1–2 run fine on a normal laptop. Steps 3–4 need an NVIDIA GPU; without one, run them on Colab (Option B).
+> The dataset and model checkpoint are not in this repo (too large). Download them from the `NLPfinalproject` Drive folder and update the paths at the top of each notebook.
+
+To just see the results without running anything, open `results/summary.md` and the `figures/` folder.
+
+### Option B: Google Colab (recommended for Steps 3–4)
+
 1. In Google Drive, add a shortcut to the `NLPfinalproject` folder in **My Drive**.
 2. Open the notebooks in order in Google Colab.
 3. For Steps 3 and 4, choose **Runtime → Change runtime type → T4 GPU**, then **Runtime → Run all**.
