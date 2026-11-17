@@ -13,11 +13,12 @@ pyloudnorm
 torch
 torchaudio
 coqui-tts
-transformers        # MMS-TTS Khmer baseline
+transformers        # MMS-TTS Khmer baseline and Wav2Vec2 Khmer ASR (second judge)
 
 # Step 4 evaluation
-rapidfuzz           # CER
-scipy               # MCD (DCT), statistics for MOS
+rapidfuzz           # CER and WER
+khmercut            # Khmer word segmentation for WER
+scipy               # statistics for MOS
 tabulate            # markdown summary table
 # qwen-asr          # Khmer ASR for CER: installed by the notebook in its own environment (B0),
 #                   # because it needs a different transformers version than coqui-tts

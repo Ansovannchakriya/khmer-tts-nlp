@@ -1,7 +1,9 @@
 On the 399 unseen test sentences our VITS reaches a CER of 6.7%, against 0.7% for the real recordings (the ASR's own error) and 20.2% for the MMS-TTS baseline.
 Our model is better than the baseline by 13.5 CER points; the gap to real speech is 6.0 points.
-Out of domain, CER is 9.8% (+3.1 points vs in-domain), which matches the domain limitation expected in the proposal.
-74% of test sentences are near-perfect (CER ≤ 10%), 3% are clear TTS errors and 0% are limited by the ASR itself.
-The hardest topic is Recipes and the easiest is Etiquettes.
-Mean MCD: ours 4.90 dB vs MMS 7.30 dB; median duration ratio of ours is 1.01; RTF 0.036.
+Out of domain, CER is 4.7% (-2.0 points vs in-domain), so the model generalises beyond the training topics.
+76% of test sentences are near-perfect (CER ≤ 10%), 2% are clear TTS errors and 0% are limited by the ASR itself.
+The hardest topic is Traditional Home Appliances and the easiest is Etiquettes.
+At word level (khmercut), WER is 16.3% for ours, 41.5% for MMS and 2.6% for the real recordings (Qwen3-ASR); ours is better than the baseline by 25.2 WER points.
+With the second ASR judge (XLSR-Wav2Vec2), CER is 20.3% for ours, 32.2% for MMS and 12.9% for the real recordings, so both judges agree on the ranking.
+Mean MCD: ours 4.90 dB vs MMS 7.30 dB; median duration ratio of ours is 1.01; RTF 0.038.
 MOS: listener ratings not collected yet (send mos/mos_package.zip to raters, then run D2 and this cell again).
